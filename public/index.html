@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Management with Firebase</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js"></script>
+</head>
+<body>
+    <h1>Complaint Management App</h1>
+    <form id="complaintForm">
+        <label for="category">Category:</label>
+        <select id="category" required>
+            <option value="Water Leakage">Water Leakage</option>
+            <option value="Waste Collection">Waste Collection</option>
+            <option value="Electricity">Electricity</option>
+        </select>
+        <label for="description">Description:</label>
+        <textarea id="description" required></textarea>
+        <button type="submit">Submit Complaint</button>
+    </form>
+    <body style="background-image: url('images/village.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+
+    <h2>All Complaints</h2>
+    <ul id="complaintList"></ul>
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>
